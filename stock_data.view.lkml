@@ -26,4 +26,9 @@ view: stock_data {
     type: count
     drill_fields: [id]
   }
+
+  measure: sum {
+    type: sum
+    sql: ${stock_value} ;;
+  }
 }
