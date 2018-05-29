@@ -15,4 +15,6 @@ persist_with: ztcstocks_default_datagroup
 
 explore: stock_data {}
 
+explore: twitter_hashtag {}
+
 explore: zero_to_cloud_js {}
