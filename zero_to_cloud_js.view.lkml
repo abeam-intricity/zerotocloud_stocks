@@ -56,14 +56,40 @@ view: zero_to_cloud_js {
     sql: ${TABLE}._METADATA_TOKEN ;;
   }
 
+  dimension: city {
+    type: string
+    sql: ${TABLE}.CITY ;;
+  }
+
+  dimension: country {
+    type: string
+    map_layer_name: countries
+    sql: ${TABLE}.COUNTRY ;;
+  }
+
+  dimension: country_code {
+    type: string
+    sql: ${TABLE}.COUNTRY_CODE ;;
+  }
+
   dimension: event {
     type: string
     sql: ${TABLE}.EVENT ;;
   }
 
+  dimension: postal_code {
+    type: number
+    sql: ${TABLE}.POSTAL_CODE ;;
+  }
+
   dimension: properties {
     type: string
     sql: ${TABLE}.PROPERTIES ;;
+  }
+
+  dimension: region {
+    type: string
+    sql: ${TABLE}.REGION ;;
   }
 
   measure: count {
