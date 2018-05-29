@@ -79,7 +79,7 @@ view: zero_to_cloud_js {
 
   dimension: postal_code {
     type: zipcode
-    sql: ${TABLE}.POSTAL_CODE ;;
+    sql: LPAD(${TABLE}.POSTAL_CODE, 5, '0') ;;
   }
 
   dimension: properties {
