@@ -1,5 +1,5 @@
 view: zero_to_cloud_js {
-  sql_table_name: ZTC.zero_to_cloud_js ;;
+  sql_table_name: ZTC.ZERO_TO_CLOUD_JS ;;
 
   dimension: _metadata__parent_uuid {
     type: string
