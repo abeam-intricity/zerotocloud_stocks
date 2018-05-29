@@ -78,7 +78,7 @@ view: zero_to_cloud_js {
   }
 
   dimension: postal_code {
-    type: number
+    type: zipcode
     sql: ${TABLE}.POSTAL_CODE ;;
   }
 
