@@ -2,7 +2,7 @@ view: stock_data {
   sql_table_name: ZTC.STOCK_DATA ;;
 
   dimension: id {
-    primary_key: yes
+    primary_key: no
     type: number
     sql: ${TABLE}.ID ;;
   }
