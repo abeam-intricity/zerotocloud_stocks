@@ -1,5 +1,5 @@
 view: customer {
-  sql_table_name: ZTC.CUSTOMER ;;
+  sql_table_name: "ZERO_TO_CLOUD"."ZTC"."Customer" ;;
 
   dimension: c_customer_id {
     type: string
