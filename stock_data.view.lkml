@@ -2,7 +2,7 @@ view: stock_data {
   sql_table_name: ZTC.STOCK_DATA ;;
 
   dimension: id {
-    primary_key: yes
+    primary_key: no
     type: number
     sql: ${TABLE}.ID ;;
   }
@@ -19,6 +19,7 @@ view: stock_data {
 
   dimension: stock_time {
     type: string
+    label: "Stock Tick Time"
     sql: ${TABLE}.STOCK_TIME ;;
   }
 
