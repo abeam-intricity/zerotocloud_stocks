@@ -19,6 +19,7 @@ view: stock_data {
 
   dimension: stock_time {
     type: string
+    label: "Stock Tick Time"
     sql: ${TABLE}.STOCK_TIME ;;
   }
 
