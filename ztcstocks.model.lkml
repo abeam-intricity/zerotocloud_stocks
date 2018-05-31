@@ -18,3 +18,11 @@ explore: stock_data {}
 explore: twitter_hashtag {}
 
 explore: zero_to_cloud_js {}
+
+explore: customer {
+  join: customer_demographics {
+    type: left_outer
+    relationship: one_to_one
+    sql_on: ${customer.c_customer_sk} = ${customer_demographics.cd_demo_sk} ;;
+  }
+}
